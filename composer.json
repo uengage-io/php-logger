@@ -1,0 +1,32 @@
+{
+  "name": "uengage/php-logger",
+  "description": "Structured observability logging for uEngage platform services",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "logger",
+    "observability",
+    "logging",
+    "uengage",
+    "ndjson"
+  ],
+  "require": {
+    "php": ">=7.1",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5 || ^9.6",
+    "yoast/phpunit-polyfills": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Uengage\\Logger\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Uengage\\Logger\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable"
+}
